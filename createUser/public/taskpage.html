@@ -1,0 +1,39 @@
+<!DOCTYPE>
+<html>
+ <head>
+     <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+
+     <title> USER TASK DETAILS APPLICATION</title> 
+</head>
+<body ng-app="mymodule">
+    <div class="container" ng-controller="mycontroller">
+        <h1> TASK PAGE APPLICATION </h1>
+        <table class= "table">
+            <thead>
+                <tr>
+                    <th>FIRST NAME</th>
+                    <th>LAST NAME</th>
+                    <th>TASK</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input class="form-control" ng-model="ctasks.first_name"></td>
+                    <td><input class="form-control" ng-model="ctasks.last_name"></td>
+                    <td><input class="form-control" ng-model="ctasks.task"></td>
+                    <td><button class="btn btn-primary" ng-click="addTask()"><a href="addtask.html">ADDTASK</a></button></td>
+                    
+                    
+                </tr>
+            </tbody>
+        </table>    
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+    <script src="controllers/taskpage.js"></script>
+</body>
+</html>      
+

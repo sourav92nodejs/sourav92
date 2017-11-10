@@ -1,0 +1,66 @@
+<style type="text/css">
+    input[type=button] {
+        color:#08233e;
+        font:2.4em Futura, ‘Century Gothic’, AppleGothic, sans-serif;
+        font-size:119%;
+        padding:14px;
+        background:url(overlay.png) repeat-x center #ffcc00;
+        background-color:rgba(255,204,0,1);
+        border:1px solid #ffcc00;
+        -moz-border-radius:10px;
+        -webkit-border-radius:10px;
+        border-radius:10px;
+        border-bottom:1px solid #9f9f9f;
+        -moz-box-shadow:inset 0 1px 0 rgba(255,255,255,0.5);
+        -webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,0.5);
+        box-shadow:inset 0 1px 0 rgba(255,255,255,0.5);
+        cursor:pointer;
+    }
+    input[type=button]:hover {
+        background-color:rgba(255,204,0,0.8);
+    }
+    .crtUser {
+        padding-bottom: 1%;
+            margin-left: 43%;
+    }
+    .gtUser {
+            padding-top: 1%;
+                    margin-left: 45%;
+    }
+    .outPopUp{
+      position: absolute;
+      width: 300px;
+      height: 200px;
+      z-index: 15;
+      top: 50%;
+      left: 50%;
+      margin: -100px 0 0 -150px;
+    }
+    </style>
+    <div class="outPopUp">
+    <div class="crtUser">
+        <a href="#" onclick="RedirectToCreateUserPage()">Create User</a>
+    </div>
+    <div class="button">
+        <a href="#" style="margin-right:1.5%;" onclick="RedirectToCreateTaskPage()">Create Task</a>
+        <input type="button" value="Submit Your Details" >
+        <a href="#" onclick="RedirectToGetTaskPage()" style="margin-left: 1.5%;display: inline-block;margin-top: 5%;position: absolute;white-space: nowrap;">Get Task</a>
+    </div>
+    <div class="gtUser">
+        <a href="#" onclick="RedirectToUserDetailPage()">Get User</a>
+    </div>
+    </div>
+    <script type="text/javascript">
+        function RedirectToCreateUserPage() {
+            window.location = "http://localhost:3000/userpage.html";
+        }
+        function RedirectToUserDetailPage() {
+            window.location = "http://localhost:3000/userdetails.html";
+        }
+        function RedirectToCreateTaskPage() {
+            window.location = "http://localhost:3000/taskpage.html";
+        }
+        function RedirectToGetTaskPage() {
+            window.location = "http://localhost:3000/taskdetails.html";
+        }
+    </script>
